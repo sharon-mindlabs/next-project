@@ -1,0 +1,39 @@
+// 1. Abstracts (always imported first)
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "abstracts/placeholders";
+
+// 2. Base styles
+@import "base/typography";
+@import "base/global";
+@import "base/utilities";
+
+// 3. Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/grid";
+@import "layout/container";
+
+
+// 4. Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/accordion";
+
+
+// 5. Pages
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/components";
+
+
+// 6. Themes
+// @import "themes/light";
+// @import "themes/dark";
+
+// 7. Vendor
+// @import "vendors/toastify";

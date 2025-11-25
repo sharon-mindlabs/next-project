@@ -1,0 +1,116 @@
+.button-solid-primary {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: #fff;
+    background: $secondary-color;
+    border: 1px solid $secondary-color;
+    transition: all 0.2s ease-in-out;
+    flex-grow: 0;
+
+    &:hover {
+        background: $fourth-color;
+        border: 1px solid $fourth-color;
+    }
+}
+
+
+
+.button-solid-secondary {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: #fff;
+
+    background: $fourth-color;
+    border: 1px solid $fourth-color;
+    transition: all 0.2s ease-in-out;
+    flex-grow: 0;
+
+    &:hover {}
+}
+
+
+.button-line {
+    display: inline-block;
+
+    border: 1px solid $tertiary-color;
+    background: #FFF;
+
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    flex-grow: 0;
+    /* 30px */
+
+    &:hover {}
+}
+
+
+
+.button-md {
+    padding: 11px 26px;
+    border-radius: 10px;
+    font-size: 16px;
+
+    @media (max-width: 1700px) {
+        padding: 8px 23px;
+        font-size: 14px;
+
+    }
+
+    @media (max-width: 1400px) {
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+}
+
+
+.button-lg {
+    padding: 22px 52px;
+    border-radius: 10px;
+    font-size: 20px;
+
+    @media (max-width: 1700px) {
+        padding: 15px 40px;
+        font-size: 17px;
+    }
+
+    @media (max-width: 1400px) {
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+.rounded-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-in-out;
+    border: transparent solid 1px;
+    color: #000000;
+
+    @media (max-width: 1800px) {
+        width: 55px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    &:hover {
+        border: #7399E9 solid 1px;
+        color: #7399E9;
+    }
+}
