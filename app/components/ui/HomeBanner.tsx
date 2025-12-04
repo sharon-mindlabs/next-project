@@ -18,7 +18,7 @@ export default function HomeBanner() {
           <section>
             <h1>
               <span>FlockDesk</span> speeds up support and boosts{" "}
-              <span>retention.</span>
+              <span>retention</span>
             </h1>
             <p>
               Deliver outstanding support and achieve new goals with FlockDesk.
