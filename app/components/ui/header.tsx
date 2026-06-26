@@ -42,26 +42,46 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/features">Features</Link>
-            <Link href="/pricing">Pricing</Link>
-            <Link href="/integrations">Integrations</Link>
-            <Link href="/resources">Resources</Link>
-
+            <Link href="/">Features</Link>
+            <Link href="/about">How it works</Link>
+            <Link href="/features">Blog</Link>
             {/* Mobile Sign In inside menu */}
-            <Link
-              href="/signin"
-              className="mobile-signin button-solid-primary button-md"
-            >
-              Sign In
-            </Link>
+
+            <div className="mobile-signin">
+              <Link
+                href="/signin"
+                title="Sign In"
+                className="button btn-primary-line btn-sm"
+              >
+                Sign In
+              </Link>
+
+              <Link
+                href="/signin"
+                title="Sign In"
+                className="button btn-primary btn-sm"
+              >
+                Start Free Trial
+              </Link>
+            </div>
           </nav>
 
           {/* Desktop Sign In */}
           <div className="desktop-signin">
-            <Link href="/signin" className="button-solid-primary button-md">
+            <Link
+              href="/signin"
+              title="Sign In"
+              className="button btn-primary-line btn-sm"
+            >
               Sign In
+            </Link>
+
+            <Link
+              href="/signin"
+              title="Sign In"
+              className="button btn-primary btn-sm"
+            >
+              Start Free Trial
             </Link>
           </div>
         </div>

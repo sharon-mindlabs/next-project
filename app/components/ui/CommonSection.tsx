@@ -1,9 +1,16 @@
+import Image from "next/image";
 export default function CommonSection() {
   return (
     <div className="common-section">
       <div className="container">
         <div className="content-area">
-          <img src="images/common-section-image.png" alt="Image" />
+          <Image
+            src="/images/common-section-image.png"
+            alt="Image"
+            width={1494}
+            height={582}
+            quality={90}
+          />
           <p>
             We are committed to providing <b>exceptional customer support</b>{" "}
             every day. <b>Our team carefully reviews each ticket</b> to ensure

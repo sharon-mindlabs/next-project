@@ -17,8 +17,8 @@ html {
 
 body {
     @extend html;
-    font-size: $base-font-size !important;
-    font-family: $base-font-family;
+    font-size: var(--secondaryFont) !important;
+    font-family: var(--secondaryFont) !important;
     color: $base-color;
     position: relative;
     background-color: $body-background-color;

@@ -22,6 +22,7 @@
 @import "components/cards";
 @import "components/forms";
 @import "components/accordion";
+@import "components/common";
 
 
 // 5. Pages
@@ -29,6 +30,8 @@
 @import "pages/about";
 @import "pages/contact";
 @import "pages/components";
+@import "pages/error-loading";
+@import "pages/auth";
 
 
 // 6. Themes

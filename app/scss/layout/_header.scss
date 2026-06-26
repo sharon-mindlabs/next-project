@@ -1,6 +1,9 @@
 .main-header {
     background: #fff;
     transition: all 0.3s ease;
+    border-bottom: 1px solid #F0F0F0;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.03);
 
     &.active {
         width: 100%;
@@ -13,32 +16,19 @@
             backdrop-filter: blur(10px);
             background: rgba(255, 255, 255, 0.48);
         }
-
     }
 
     .header-wapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 0;
-
-        @media (max-width: 1200px) {
-            padding: 20px 0;
-        }
+        padding: 18px 0;
 
         .logo {
             a {
                 img {
-                    width: 171px;
+                    width: clamp(120px, 12vw, 153px);
                     height: auto;
-
-                    @media (max-width: 1700px) {
-                        width: 160px;
-                    }
-
-                    @media (max-width: 1400px) {
-                        width: 145px;
-                    }
                 }
             }
         }
@@ -47,29 +37,27 @@
             display: flex;
             gap: 40px;
             padding: 0 15px;
-
-            @media (max-width: 1700px) {
-                padding: 0 30px;
-            }
-
-
-
-
-            @media (max-width: 1200px) {
-                display: none;
-            }
+            margin-left: auto;
+            margin-right: 0;
 
 
 
             a {
-
-                font-size: 14px;
+                font-size: clamp(16px, 1.2vw, 18px);
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 400;
                 line-height: 150%;
                 color: $primary-color;
-                text-transform: uppercase;
+                font-family: var(--sectondaryFont);
             }
+        }
+
+        .desktop-signin {
+            .btn-primary-line {
+                margin-right: 10px;
+            }
+
+
         }
 
     }
@@ -126,7 +114,7 @@
     .menu-navigation {
         position: fixed;
         top: 77px;
-        right: -100%;
+        right: -105%;
         width: 100vw;
         height: 100vh;
         padding: 30px 20px !important;
@@ -142,6 +130,17 @@
     .menu-navigation.show {
         right: 0;
         display: flex !important;
+
+        .btn-primary {
+            color: #fff !important;
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
     }
 
     .desktop-signin {
@@ -149,10 +148,19 @@
     }
 
     .mobile-signin {
-        display: block !important;
+        display: flex !important;
+        gap: 12px;
         border-radius: 6px;
+        text-align: left;
+        margin-right: 10px;
 
         color: #fff !important;
+
+        .button {
+            display: inline-block;
+
+
+        }
     }
 
     .mobile-toggle {

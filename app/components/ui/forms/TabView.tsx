@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 // ✔ Only data — no JSX inside the object
 const tabsData = [
   {
@@ -70,7 +70,12 @@ export default function DynamicTabs() {
         <div className="tab-content">
           <div className="tab-item">
             <div className="image-area">
-              <img src={activeTab.image} alt="" />
+              <Image
+                src={activeTab.image}
+                alt={activeTab.title}
+                width={680}
+                height={437}
+              />
             </div>
 
             <section>

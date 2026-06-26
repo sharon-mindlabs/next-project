@@ -1,239 +1,76 @@
 h1 {
-    text-align: center;
-    font-size: 80px;
+    font-size: clamp(42px, 6vw, 110px);
     font-style: normal;
-    font-weight: 600;
-    line-height: 108%;
+    font-weight: 400;
+    line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: 70px;
-    }
-
-    @media (max-width: 1600px) {
-        font-size: 65px;
-    }
-
-    @media (max-width: 1400px) {
-        font-size: 60px;
-    }
-
-    @media (max-width: 1300px) {
-        font-size: 58px;
-    }
-
-    @media (max-width: 1200px) {
-        font-size: 55px;
-    }
-
-    @media (max-width: 991px) {
-        font-size: 50px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 45px;
-    }
-
-    @media (max-width: 648px) {
-        font-size: 40px;
+        font-size: clamp(42px, 5vw, 110px);
     }
 }
-
 
 
 h2 {
-    color: #11201B;
-    font-size: 60px;
+    font-size: clamp(36px, 6vw, 85px);
     font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
+    font-weight: 400;
+    line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: 55px;
-    }
-
-    @media (max-width: 1600px) {
-        font-size: 52px;
-    }
-
-    @media (max-width: 1400px) {
-        font-size: 48px;
-    }
-
-    @media (max-width: 1300px) {
-        font-size: 42px;
-    }
-
-    @media (max-width: 1200px) {
-        font-size: 40px;
-    }
-
-    @media (max-width: 991px) {
-        font-size: 38px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 30px;
+        font-size: clamp(36px, 5vw, 85px);
     }
 }
-
 
 
 
 h3 {
-    color: #11201B;
-    font-size: 48px;
+    font-size: clamp(32px, 6vw, 72px);
     font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
+    font-weight: 400;
+    line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: 45px;
-    }
-
-    @media (max-width: 1600px) {
-        font-size: 42px;
-    }
-
-    @media (max-width: 1400px) {
-        font-size: 38px;
-    }
-
-    @media (max-width: 1300px) {
-        font-size: 36px;
-    }
-
-    @media (max-width: 1200px) {
-        font-size: 34px;
-    }
-
-    @media (max-width: 991px) {
-        font-size: 32px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 26px;
+        font-size: clamp(32px, 4vw, 72px);
     }
 }
-
 
 
 
 h4 {
-    color: #11201B;
-    font-size: 36px;
+    font-size: clamp(30px, 6vw, 40px);
     font-style: normal;
-    font-weight: 600;
-    line-height: 123%;
+    font-weight: 400;
+    line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: 34px;
-    }
-
-    @media (max-width: 1600px) {
-        font-size: 32px;
-    }
-
-    @media (max-width: 1400px) {
-        font-size: 30px;
-    }
-
-    @media (max-width: 1300px) {
-        font-size: 28px;
-    }
-
-    @media (max-width: 1200px) {
-        font-size: 26px;
-    }
-
-    @media (max-width: 991px) {
-        font-size: 25px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 24px;
+        font-size: clamp(30px, 5vw, 40px);
     }
 }
-
-
 
 
 
 h5 {
-    color: #11201B;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 125%;
-
-    @media (max-width: 1400px) {
-        font-size: 22px;
-    }
-
-
-
-    @media (max-width: 1200px) {
-        font-size: 21px;
-    }
-
-
-    @media (max-width: 768px) {
-        font-size: 20px;
-    }
-}
-
-
-
-h6 {
-    color: #11201B;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    /* 30px */
-
-
-
-    @media (max-width: 1400px) {
-        font-size: 19px;
-    }
-
-
-
-    @media (max-width: 1200px) {
-        font-size: 18px;
-    }
-
-
-    @media (max-width: 768px) {
-        font-size: 17px;
-    }
-}
-
-.subtitle {
-    margin-bottom: 18px;
-    color: #6C86E3;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%;
-
-    @media (max-width: 1400px) {
-        font-size: 19px;
-    }
-
-    @media (max-width: 1200px) {
-        font-size: 18px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 17px;
-    }
-}
-
-
-.date {
-    color: #7C8D88;
-    font-size: 14px;
+    font-size: clamp(24px, 1.8vw, 32px);
     font-style: normal;
     font-weight: 400;
-    line-height: 125%;
+    line-height: 118.667%;
+
+}
+
+h6 {
+    font-size: clamp(18px, 1.8vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.667%;
+
+}
+
+
+p {
+    font-family: var(--secondaryFont);
+    letter-spacing: var(--Label-Label-1-LetterSpacing, 0.1px);
+}
+
+img {
+    image-rendering: auto !important;
 }

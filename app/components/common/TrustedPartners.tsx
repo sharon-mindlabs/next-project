@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function TrustedPartners() {
   const partners = [
     {
@@ -26,7 +27,13 @@ export default function TrustedPartners() {
 
           <div className="partners-logos">
             {partners.map((logo, index) => (
-              <img key={index} src={logo.src} alt={logo.alt} />
+              <Image
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                width={157}
+                height={157}
+              />
             ))}
           </div>
         </div>

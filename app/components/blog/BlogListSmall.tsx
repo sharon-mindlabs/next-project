@@ -30,11 +30,13 @@ export default function BlogListSmall() {
         <div className="item" key={index}>
           <section>
             <span className="date">{item.date}</span>
-            <Link href="/">{item.title}</Link>
+            <Link href="/" title={item.title}>
+              {item.title}
+            </Link>
             <p>{item.desc}</p>
           </section>
 
-          <Link href={item.link} className="rounded-link">
+          <Link href={item.link} title={item.link} className="rounded-link">
             <i className="icon-arrow-up-right"></i>
           </Link>
         </div>

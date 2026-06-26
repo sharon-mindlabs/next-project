@@ -1,116 +1,198 @@
-.button-solid-primary {
-    display: inline-block;
-    font-style: normal;
+// .button {
+//     border: 1px solid transparent;
+//     background: none;
+//     outline: none;
+//     text-decoration: none;
+//     line-height: normal;
+//     font-weight: 600;
+//     font-family: var(--secondaryFont);
+
+//     &.btn-primary {
+//         background: $primary-color;
+//         border-color: $primary-color;
+//         color: #fff;
+//     }
+
+//     &.btn-primary-line {
+//         border-color: $primary-color;
+//         color: $primary-color;
+//         background: #fff;
+//     }
+
+//     &.btn-white {
+//         background: #fff;
+//         color: $primary-color;
+//     }
+
+
+
+//     &.btn-sm {
+//         border-radius: 5px;
+//         padding: clamp(9px, 1vw, 11px) clamp(22px, 2vw, 28px);
+//         font-size: clamp(14px, 1vw, 16px);
+//     }
+
+//     &.btn-lg {
+//         border-radius: clamp(8px, 0.8vw, 10px);
+//         padding: clamp(9px, 0.8vw, 11px) clamp(24px, 2.5vw, 37px);
+//         font-size: clamp(14px, 1vw, 16px);
+//     }
+
+//     &.btn-xl {
+//         border-radius: clamp(8px, 0.8vw, 10px);
+//         padding: clamp(14px, 1.5vw, 20px) clamp(24px, 2.5vw, 30px);
+//         font-size: clamp(14px, 1vw, 16px);
+//     }
+
+//     &.btn-xxl {
+//         padding: clamp(18px, 2vw, 26px) clamp(32px, 5vw, 60px);
+//         border-radius: clamp(8px, 0.8vw, 10px);
+//         font-size: clamp(16px, 1.5vw, 20px);
+//     }
+// }
+
+
+.button {
+    border: 1px solid transparent;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    line-height: normal;
     font-weight: 600;
-    line-height: 150%;
-    color: #fff;
-    background: $secondary-color;
-    border: 1px solid $secondary-color;
-    transition: all 0.2s ease-in-out;
-    flex-grow: 0;
-
-    &:hover {
-        background: $fourth-color;
-        border: 1px solid $fourth-color;
-    }
-}
-
-
-
-.button-solid-secondary {
-    display: inline-block;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    color: #fff;
-
-    background: $fourth-color;
-    border: 1px solid $fourth-color;
-    transition: all 0.2s ease-in-out;
-    flex-grow: 0;
-
-    &:hover {}
-}
-
-
-.button-line {
-    display: inline-block;
-
-    border: 1px solid $tertiary-color;
-    background: #FFF;
-
-    transition: all 0.2s ease-in-out;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    flex-grow: 0;
-    /* 30px */
-
-    &:hover {}
-}
-
-
-
-.button-md {
-    padding: 11px 26px;
-    border-radius: 10px;
-    font-size: 16px;
-
-    @media (max-width: 1700px) {
-        padding: 8px 23px;
-        font-size: 14px;
-
-    }
-
-    @media (max-width: 1400px) {
-        padding: 8px 18px;
-        font-size: 15px;
-    }
-}
-
-
-.button-lg {
-    padding: 22px 52px;
-    border-radius: 10px;
-    font-size: 20px;
-
-    @media (max-width: 1700px) {
-        padding: 15px 40px;
-        font-size: 17px;
-    }
-
-    @media (max-width: 1400px) {
-        padding: 15px 32px;
-        font-size: 16px;
-    }
-}
-
-
-
-
-.rounded-link {
-    display: flex;
-    justify-content: center;
+    font-family: var(--secondaryFont);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
     align-items: center;
-    flex-shrink: 0;
-    width: 65px;
-    height: 65px;
-    border-radius: 100px;
-    background: #FFF;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
-    transition: all 0.2s ease-in-out;
-    border: transparent solid 1px;
-    color: #000000;
+    justify-content: center;
 
-    @media (max-width: 1800px) {
-        width: 55px;
-        height: 55px;
-        font-size: 15px;
+    // Smooth transition for all interactive properties
+    transition:
+        background-color 0.22s ease,
+        border-color 0.22s ease,
+        color 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.15s ease;
+
+    // Shimmer pseudo-element (shared by all variants)
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(105deg,
+                transparent 40%,
+                rgba(255, 255, 255, 0.18) 50%,
+                transparent 60%);
+        transform: translateX(-100%);
+        transition: transform 0s;
+        pointer-events: none;
     }
 
-    &:hover {
-        border: #7399E9 solid 1px;
-        color: #7399E9;
+    &:hover::after {
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    // ─── Variants ────────────────────────────────────────────────
+
+    &.btn-primary {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: #fff;
+
+        &:hover {
+            background: darken($primary-color, 8%);
+            border-color: darken($primary-color, 8%);
+            box-shadow: 0 4px 16px rgba($primary-color, 0.35);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 3px rgba($primary-color, 0.35);
+        }
+
+        &:active {
+            background: darken($primary-color, 14%);
+            box-shadow: none;
+        }
+    }
+
+    &.btn-primary-line {
+        border-color: $primary-color;
+        color: $primary-color;
+        background: #fff;
+
+        &::after {
+            background: linear-gradient(105deg,
+                    transparent 40%,
+                    rgba($primary-color, 0.08) 50%,
+                    transparent 60%);
+        }
+
+        &:hover {
+            background: rgba($primary-color, 0.06);
+            border-color: darken($primary-color, 10%);
+            color: darken($primary-color, 10%);
+            box-shadow: 0 4px 14px rgba($primary-color, 0.18);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 3px rgba($primary-color, 0.25);
+        }
+
+        &:active {
+            background: rgba($primary-color, 0.12);
+            box-shadow: none;
+        }
+    }
+
+    &.btn-white {
+        background: #fff;
+        color: $primary-color;
+        border-color: rgba(0, 0, 0, 0.08);
+
+        &:hover {
+            background: #f5f5f5;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+
+        &:active {
+            background: #ebebeb;
+            box-shadow: none;
+        }
+    }
+
+    // ─── Sizes (unchanged layout, just ensure border-radius stays) ──
+
+    &.btn-sm {
+        border-radius: 5px;
+        padding: clamp(9px, 1vw, 11px) clamp(22px, 2vw, 28px);
+        font-size: clamp(14px, 1vw, 16px);
+    }
+
+    &.btn-lg {
+        border-radius: clamp(8px, 0.8vw, 10px);
+        padding: clamp(9px, 0.8vw, 11px) clamp(24px, 2.5vw, 37px);
+        font-size: clamp(14px, 1vw, 16px);
+    }
+
+    &.btn-xl {
+        border-radius: clamp(8px, 0.8vw, 10px);
+        padding: clamp(14px, 1.5vw, 20px) clamp(24px, 2.5vw, 30px);
+        font-size: clamp(14px, 1vw, 16px);
+    }
+
+    &.btn-xxl {
+        padding: clamp(16px, 2vw, 26px) clamp(24px, 2.5vw, 60px);
+        border-radius: clamp(8px, 0.8vw, 10px);
+        font-size: clamp(16px, 1.5vw, 20px);
     }
 }

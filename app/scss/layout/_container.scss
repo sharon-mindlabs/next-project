@@ -1,17 +1,22 @@
+// .container {
+//     width: 100%;
+//     width: 100%;
+//     max-width: 1660px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+
+
+//     @media (min-width: 1080px) {
+//         padding: 0 40px;
+//     }
+
+//     @media (min-width: 1700px) {
+//         padding: 0 80px;
+//     }
+
+// }
+
 .container {
-    width: 100%;
-    width: 100%;
-    max-width: 1920px;
+    width: min(1660px, calc(100% - clamp(30px, 6vw, 160px)));
     margin: 0 auto;
-    padding: 0 15px;
-
-
-    @media (min-width: 1080px) {
-        padding: 0 40px;
-    }
-
-    @media (min-width: 1700px) {
-        padding: 0 80px;
-    }
-
 }

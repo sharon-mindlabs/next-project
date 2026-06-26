@@ -19,7 +19,7 @@ export default function Footer() {
               The complete SaaS solution for task management and team
               productivity.
             </p>
-            <span>© 2025 FlockDesk. All rights reserved.</span>
+            <span>© 2026 FlockDesk. All rights reserved.</span>
           </div>
 
           <div className="footer-link">
@@ -103,11 +103,11 @@ export default function Footer() {
           <div className="footer-link start-tirial">
             <h6 className="sub-heading">Start your free trial today</h6>
             <div className="cta-btn">
-              <Link href="/" className="button-solid-secondary button-md">
+              <Link href="/" className="button btn-primary btn-xl">
                 Start Free Trial
               </Link>
 
-              <Link href="/" className="button-solid-primary button-md">
+              <Link href="/" className="button btn-primary-line btn-xl">
                 Live Chat
               </Link>
             </div>
