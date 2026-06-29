@@ -90,10 +90,11 @@
 
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
+import "swiper/css/navigation";
 
 export type WhyChooseFeature = {
   option: "yes" | "no";
@@ -148,74 +149,37 @@ export default function WhyFlockDesk({ data }: WhyChooseProps) {
               </div>
             </div>
 
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={15}
-              slidesPerView={2}
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-
-                setTimeout(() => {
-                  swiper.slides.forEach((slide) =>
-                    slide.querySelector(".slide")?.classList.remove("active"),
-                  );
-
-                  swiper.slides[swiper.activeIndex]
-                    ?.querySelector(".slide")
-                    ?.classList.add("active");
-                });
-              }}
-              onSlideChange={(swiper) => {
-                swiper.slides.forEach((slide) =>
-                  slide.querySelector(".slide")?.classList.remove("active"),
-                );
-
-                swiper.slides[swiper.activeIndex]
-                  ?.querySelector(".slide")
-                  ?.classList.add("active");
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-              }}
-              className="slider-wrapper"
-            >
+            <div className="price-wrapper">
               {data?.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <div className="slide">
-                    <h6>{item.title}</h6>
+                <div className="item" key={item.id}>
+                  <h6>{item.title}</h6>
 
-                    <ul>
-                      {item.features.map((feature, index) => (
-                        <li key={index}>
-                          <i
-                            className={
-                              feature.option === "yes"
-                                ? "icon-tick-2"
-                                : "icon-close-2"
-                            }
-                          ></i>
-                          {feature.point}
-                        </li>
-                      ))}
-                    </ul>
+                  <ul>
+                    {item.features.map((feature, index) => (
+                      <li key={index}>
+                        <i
+                          className={
+                            feature.option === "yes"
+                              ? "icon-tick-2"
+                              : "icon-close-2"
+                          }
+                        ></i>
+                        {feature.point}
+                      </li>
+                    ))}
+                  </ul>
 
-                    <div className="price">
-                      <i className={item.priceIcon}></i>
+                  <div className="price">
+                    <i className={item.priceIcon}></i>
 
-                      <section>
-                        <span className="title">Starting Price :</span>
-                        <h6>{item.price}</h6>
-                      </section>
-                    </div>
+                    <section>
+                      <span className="title">Starting Price :</span>
+                      <h6>{item.price}</h6>
+                    </section>
                   </div>
-                </SwiperSlide>
+                </div>
               ))}
-            </Swiper>
+            </div>
           </div>
 
           {/* Image Area */}
@@ -228,11 +192,51 @@ export default function WhyFlockDesk({ data }: WhyChooseProps) {
             ></div>
 
             <div className="why-business">
-              <img
-                className="main-image"
-                src="images/why-business-image.png"
-                alt=""
-              />
+              <div className="main-image-slider-wrapper">
+                <Swiper
+                  modules={[Navigation, Autoplay]}
+                  slidesPerView={1}
+                  spaceBetween={0}
+                  loop={true}
+                  onSwiper={(swiper) => (swiperRef.current = swiper)}
+                  autoplay={{
+                    delay: 3000, // 3 seconds
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }}
+                  speed={800}
+                >
+                  <SwiperSlide>
+                    <div className="slide">
+                      <img
+                        className="main-image"
+                        src="images/why-business-image.png"
+                        alt=""
+                      />
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="slide">
+                      <img
+                        className="main-image"
+                        src="images/why-business-image.png"
+                        alt=""
+                      />
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="slide">
+                      <img
+                        className="main-image"
+                        src="images/why-business-image.png"
+                        alt=""
+                      />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
 
               <div className="discription">
                 <img src="images/king-icon.svg" alt="" />

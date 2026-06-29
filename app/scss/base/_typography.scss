@@ -5,7 +5,7 @@ h1 {
     line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: clamp(42px, 5vw, 110px);
+        font-size: clamp(42px, 4vw, 110px);
     }
 }
 
@@ -17,7 +17,7 @@ h2 {
     line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: clamp(36px, 5vw, 85px);
+        font-size: clamp(36px, 4vw, 85px);
     }
 }
 
@@ -30,7 +30,7 @@ h3 {
     line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: clamp(32px, 4vw, 72px);
+        font-size: clamp(32px, 3vw, 72px);
     }
 }
 
@@ -43,7 +43,7 @@ h4 {
     line-height: 118.667%;
 
     @media (max-width: 1700px) {
-        font-size: clamp(30px, 5vw, 40px);
+        font-size: clamp(30px, 1vw, 40px);
     }
 }
 
@@ -60,7 +60,7 @@ h5 {
 h6 {
     font-size: clamp(18px, 1.8vw, 20px);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 00;
     line-height: 118.667%;
 
 }

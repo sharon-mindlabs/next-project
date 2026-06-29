@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import useInView from "@/hooks/useInView";
 
 export type HomeUseCaseItem = {
   id: number;
@@ -16,8 +17,9 @@ type UseCaseProps = {
 };
 
 export default function TabSection({ data }: UseCaseProps) {
+  const { ref, active } = useInView();
   return (
-    <div className="use-case">
+    <div className={`use-case ${active ? "active" : ""}`} ref={ref}>
       <div className="container">
         <div className="content-area">
           <div className="heading-area">

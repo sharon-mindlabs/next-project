@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 
 import UserIcon from "../common/UserIcon";
 import { userImages } from "../../data";
+import useInView from "@/hooks/useInView";
 
 export default function HomeBanner() {
   // const background = {
@@ -10,8 +12,9 @@ export default function HomeBanner() {
   //   backgroundPosition: "center",
   //   backgroundRepeat: "no-repeat",
   // };
+  const { ref, active } = useInView();
   return (
-    <div className="home-banner">
+    <div className={`home-banner ${active ? "active" : ""}`} ref={ref}>
       <div className="container">
         <div className="content--area">
           <div className="text-area">
@@ -41,11 +44,32 @@ export default function HomeBanner() {
           </div>
 
           <div className="image-area">
-            <img
-              className="main-image"
-              src="images/banner-main-image.png"
-              alt=""
-            />
+            <div className="main-image-container">
+              <img
+                src="images/banner-image-1.png"
+                alt=""
+                className="banner-1"
+              />
+
+              <img
+                src="images/banner-image-2.png"
+                alt=""
+                className="banner-2"
+              />
+
+              <img
+                src="images/banner-image-3.png"
+                alt=""
+                className="banner-3"
+              />
+
+              <img
+                src="images/banner-image-4.png"
+                alt=""
+                className="banner-4"
+              />
+            </div>
+
             <div className="banner-rating">
               <span>Trusted by 500+ growing teams</span>
               <img src="images/rating-five-star.svg" alt="" />

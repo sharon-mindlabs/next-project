@@ -128,7 +128,7 @@ export const homeUseCases = [
     id: 3,
     title: "Growing Support Teams",
     description:
-      "Launch professional customer support from day one with tools that help your team stay  organized and scale confidently as you grow.",
+      "Move beyond shared inboxes with structured ticket management, clear ownership, and  workflows designed to support higher ticket volumes.",
     icon: "icon-growing",
     key: "2-min quick-start",
     image: "images/growing-support-team.png",
@@ -221,41 +221,6 @@ export const whyChooseData: WhyChooseDataItem[] = [
 
   {
     id: 2,
-    title: "Traditional Tools",
-
-    features: [
-      {
-        option: "no",
-        point: "Disconnected Support Tools",
-      },
-
-      {
-        option: "no",
-        point: "Shared Data Environments",
-      },
-
-      {
-        option: "no",
-        point: "Per-Agent Pricing",
-      },
-
-      {
-        option: "yes",
-        point: "Limited Automation",
-      },
-
-      {
-        option: "yes",
-        point: "Complex User Management",
-      },
-    ],
-
-    priceIcon: "icon-pin",
-    price: "$49/month",
-  },
-
-  {
-    id: 3,
     title: "Traditional Tools",
 
     features: [
