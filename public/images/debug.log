@@ -4,3 +4,4 @@
 [0629/092412.204:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0629/092412.357:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0629/092414.555:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0629/174059.818:ERROR:local_storage_context_mojo.cc(706)] Lost connection to database

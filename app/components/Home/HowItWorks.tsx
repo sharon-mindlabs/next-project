@@ -17,7 +17,7 @@ type HowWorksStepProps = {
 export default function HowItWorks({ data }: HowWorksStepProps) {
   return (
     <>
-      <div className="how-it-works">
+      <div className="how-it-works" id="how-it-works">
         <div className="container">
           <div className="working-steps">
             <div className="heading-area">

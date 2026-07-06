@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function HomeFooterCTA() {
   return (
@@ -15,12 +14,8 @@ export default function HomeFooterCTA() {
             <h2>Ready to Scale Customer Support Without the Complexity?</h2>
 
             <div className="cta">
-              <Link className="button btn-white btn-xxl" href="">
+              <Link className="button btn-white btn-xxl" href="/enquiry">
                 Start Free Trial
-              </Link>
-
-              <Link className="link-button" href="">
-                Explore Features
               </Link>
             </div>
             <div className="note">

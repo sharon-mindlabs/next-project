@@ -174,7 +174,7 @@ export default function TabSection({ data }: TabSectionProps) {
               designed to keep support efficient and responsive.
             </p>
 
-            <Link className="button btn-white btn-xxl" href="/about">
+            <Link className="button btn-white btn-xxl" href="/enquiry">
               Start Free Trial
             </Link>
           </div>

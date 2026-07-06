@@ -1,0 +1,140 @@
+/*============================================================
+ *Enquiry form Styles
+ *===========================================================*/
+.enquiry-form {
+    background: #1A1E24;
+
+    .content-area {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--primaryFont);
+
+        .image-area {
+            position: relative;
+            width: 45%;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            .enquiry-image {
+                z-index: 0;
+                background-size: cover;
+                width: 900px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-repeat: no-repeat !important;
+
+                @media (min-width: 1980px) {
+                    width: 1200px;
+                }
+            }
+
+            .discription {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 35px;
+                bottom: 125px;
+                padding-right: 20px;
+                position: absolute;
+                z-index: 10;
+
+                @media (max-width: 1200px) {
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+                }
+
+                img {
+                    width: clamp(40px, 4vw, 93px);
+                    height: clamp(40px, 4vw, 93px);
+                }
+
+                p {
+                    width: 100%;
+                    max-width: clamp(320px, 30vw, 480px);
+                    color: #fff;
+                    font-family: var(--secondaryFont);
+                    font-size: clamp(15px, 1.2vw, 20px);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 164%;
+
+                    @media (max-width: 1200px) {
+                        max-width: 100%;
+                        font-size: clamp(18px, 1.2vw, 20px);
+                    }
+                }
+            }
+        }
+
+        .form-area {
+            width: 55%;
+            padding: clamp(60px, 6vw, 100px) clamp(15px, 6vw, 45px);
+            color: #fff;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                padding: 50px 0;
+            }
+
+            .form-wrapper {
+                max-width: 710px;
+                width: 100%;
+                margin: 0 auto;
+                flex-shrink: 0;
+
+                .heading {
+                    margin-bottom: clamp(24px, 2.2vw, 36px);
+
+                    .discription {
+                        margin-bottom: clamp(14px, 1.1vw, 18px);
+                    }
+                }
+            }
+
+            .form-field {
+                margin-bottom: 20px;
+
+                label {
+                    color: #fff;
+                }
+
+                .input-wrapper {
+                    background: #252930;
+
+                    input {
+                        background: transparent;
+                        font-size: 18px;
+                        outline: none;
+                        border: none;
+                        color: #fff;
+                    }
+
+                    i {
+                        font-size: 18px;
+                        color: #8F8F8F;
+                    }
+                }
+            }
+
+            .submit-text {
+                display: block;
+                color: #8C8C8C;
+                margin-bottom: 36px;
+                font-size: clamp(14px, 1.1vw, 16px);
+
+                a {
+
+                    color: #fff;
+                    font-size: clamp(14px, 1.1vw, 16px);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

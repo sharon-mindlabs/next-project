@@ -42,9 +42,9 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
-            <Link href="/">Features</Link>
-            <Link href="/about">How it works</Link>
-            <Link href="/features">Blog</Link>
+            <Link href="#features-section">Features</Link>
+            <Link href="#how-it-works">How it works</Link>
+            <Link href="#">Blog</Link>
             {/* Mobile Sign In inside menu */}
 
             <div className="mobile-signin">
@@ -57,7 +57,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/signin"
+                href="/enquiry"
                 title="Sign In"
                 className="button btn-primary btn-sm"
               >
@@ -77,7 +77,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/signin"
+              href="/enquiry"
               title="Sign In"
               className="button btn-primary btn-sm"
             >

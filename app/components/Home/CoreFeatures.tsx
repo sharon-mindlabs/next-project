@@ -14,7 +14,7 @@ type CoreFeatureProps = {
 
 export default function CoreFeatures({ data }: CoreFeatureProps) {
   return (
-    <div className="core-features">
+    <div className="core-features" id="features-section">
       <div className="container">
         <div className="content-area">
           <div className="heading">
@@ -31,7 +31,7 @@ export default function CoreFeatures({ data }: CoreFeatureProps) {
               collaboration.
             </p>
 
-            <Link className="button btn-primary btn-xxl" href="/about">
+            <Link className="button btn-primary btn-xxl" href="/enquiry">
               Start Free Trial
             </Link>
           </div>

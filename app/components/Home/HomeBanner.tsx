@@ -77,14 +77,14 @@ export default function HomeBanner() {
             <div className="cta">
               <Link
                 className="button btn-primary btn-xxl"
-                href="/"
+                href="/enquiry"
                 title="Start Free Trial"
               >
                 Start Free Trial
               </Link>
               <Link
                 className="button btn-primary-line btn-xxl"
-                href="/"
+                href="#how-it-works"
                 title="See How It Works"
               >
                 See How It Works
