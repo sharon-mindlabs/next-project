@@ -2004,6 +2004,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
+        white-space: pre-wrap;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
     }
 
     .content-area {
@@ -2026,6 +2031,7 @@
                 align-items: center;
                 gap: 7px;
                 margin-bottom: clamp(20px, 2.5vw, 35px);
+                white-space: pre-wrap;
 
                 img {
                     width: 28px;
@@ -2055,10 +2061,14 @@
             p {
                 margin-bottom: clamp(28px, 2.5vw, 35px);
                 font-size: clamp(15px, 1.2vw, 20px);
+                white-space: pre-wrap;
             }
 
             img {
                 border-radius: 10px;
+                max-height: 340px;
+                width: 100%;
+                object-fit: cover;
             }
 
         }
@@ -2098,6 +2108,11 @@
 
                     p {
                         font-size: clamp(15px, 1.2vw, 16px);
+                        white-space: pre-wrap;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
                     }
 
                 }
@@ -2113,6 +2128,7 @@
                     border-radius: 100px;
                     border: 1px solid #000;
                     color: #000;
+                    transition: all 0.2s ease-in-out;
                 }
 
                 &:hover {
@@ -2123,6 +2139,7 @@
                     i {
                         background: $primary-color;
                         color: #fff;
+                        transform: rotate(45deg);
                     }
                 }
             }

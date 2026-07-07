@@ -44,7 +44,7 @@ export default function Header() {
           <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
             <Link href="#features-section">Features</Link>
             <Link href="#how-it-works">How it works</Link>
-            <Link href="#">Blog</Link>
+            <Link href="/blog">Blog</Link>
             {/* Mobile Sign In inside menu */}
 
             <div className="mobile-signin">

@@ -38,7 +38,7 @@ export default function HowItWorks({ data }: HowWorksStepProps) {
 
             <div className="steps-warpper">
               {data?.map((item: HowWorksStepItem) => (
-                <div className="item">
+                <div className="item" key={item?.id}>
                   <i className={`${item?.icon}`}></i>
                   <h6>{item?.title}</h6>
                   <p>{item?.discription}</p>

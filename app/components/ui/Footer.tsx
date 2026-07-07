@@ -21,13 +21,13 @@ export default function Footer() {
             <div className="footer-link">
               <ul>
                 <li>
-                  <Link href="/">Terms</Link>
+                  <Link href="/terms-and-conditions">Terms</Link>
                 </li>
                 <li>
-                  <Link href="/">Privacy</Link>
+                  <Link href="/privacy-policy">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="/">Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
               </ul>
             </div>

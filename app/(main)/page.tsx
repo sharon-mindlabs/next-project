@@ -10,6 +10,7 @@ import Faq from "../components/Home/Faq";
 import HomeFooterCTA from "../components/Home/HomeFooterCTA";
 
 import HomeBlog from "../components/Home/HomeBlog";
+import { getLatestBlogs } from "../api/blog/blog";
 
 import {
   homeTabData,
@@ -22,7 +23,8 @@ import {
   HomeBlogData,
 } from "../data";
 
-export default function Home() {
+export default async function Home() {
+  const HomeBlogData = await getLatestBlogs();
   return (
     <div className="home-page">
       <HomeBanner />

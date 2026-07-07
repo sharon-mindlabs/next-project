@@ -15,12 +15,9 @@ export const submitEnquiry = async (payload: EnquiryPayload) => {
     },
     body: JSON.stringify(payload),
   });
-
   const data = await response.json();
-
   if (!response.ok) {
     throw new Error(data?.message || "Failed to submit enquiry");
   }
-
   return data;
 };
