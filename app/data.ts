@@ -336,118 +336,52 @@ export const TestimornalsData = [
 export const FAQData = [
   {
     id: 1,
-    qustion: "How does FlockDesk work?",
+    qustion: "How does FlockDesk operate?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "FlockDesk turns incoming email messages from customers into support tickets, which can be tracked, prioritized, assigned, and solved effectively by customer support teams. Built-in automation features, SLA management options, and team collaboration allow for easier support ticket management and increased response time.",
   },
 
   {
     id: 2,
-    qustion: "Who is FlockDesk designed for?",
+    qustion: "What types of users are targeted by FlockDesk?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "FlockDesk is aimed at startups, SaaS companies, customer support teams, customer success teams, and any growing companies, which require one solution to manage their support operations and customer requests.",
   },
 
   {
     id: 3,
-    qustion: "How does FlockDesk handle support tickets?",
+    qustion: "How does FlockDesk work with support tickets?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "FlockDesk turns all customer requests into support tickets automatically, distributes them among teams or agents, and allows to monitor the progress, manage priorities, and follow the SLAs during the whole process.",
   },
-
   {
     id: 4,
-    qustion: "Does FlockDesk support workflow automation?",
+    qustion: "Is workflow automation provided within FlockDesk and why?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "Yes. FlockDesk provides automation for such processes as ticket routing, updating of status, SLA actions, and notifications.",
   },
-
   {
     id: 5,
-    qustion: "How quickly can teams get started with FlockDesk?",
+    qustion: "What is SLA management and why is it important?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "Service Level Agreements allow teams to establish targets for responding and resolving requests from customers. SLA management makes it possible to become accountable, consistent, and able to fulfill the expectations of customers.",
   },
   {
     id: 6,
-    qustion: "How can a help desk platform improve customer support?",
+    qustion: "How can teams collaborate better using FlockDesk?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "With the help of shared visibility of tickets, role-based access control, internal notes, and team allocation, it becomes easy for support representatives to collaborate in an efficient way and have ownership.",
   },
   {
     id: 7,
-    qustion: "Why is workflow automation important for support teams?",
+    qustion: "How fast can teams get up and running with FlockDesk?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
+      "Teams can get started fast by linking support emails, configuring teams, permissions, workflows and begin ticket management from a central platform.",
   },
   {
     id: 8,
-    qustion: "What is SLA management and why does it matter?",
+    qustion: "Can FlockDesk be scaled when your business grows?",
     answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
-  },
-
-  {
-    id: 9,
-    qustion: "How can support teams collaborate more effectively?",
-    answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
-  },
-
-  {
-    id: 10,
-    qustion: "Can a help desk platform scale with a growing business?",
-    answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
-  },
-
-  {
-    id: 11,
-    qustion: "What metrics should customer support teams track?",
-    answer:
-      "FlockDesk is built for startups, SaaS businesses, customer support teams, customer success  teams, and growing organizations that need a centralized platform for managing customer  support operations and service requests.",
-  },
-];
-
-// Home blog
-export const HomeBlogData = [
-  {
-    id: 1,
-    date: "August 21, 2026",
-    title: "The Power of an Organized Ticketing System",
-    discription:
-      "Deliver faster, more organized support with an effective ticketing system. Keep customers happy and your team productive every step of the way.",
-    image: "images/blog-image.png",
-    link: "",
-  },
-  {
-    id: 2,
-    date: "August 21, 2026",
-    title:
-      "Unlock Faster Resolutions and Happier Customers with Better Ticketing",
-    discription:
-      "Streamline every support interaction with organized ticket workflows, real-time updates, and smart automation—empowering your...",
-    image: "",
-    link: "",
-  },
-
-  {
-    id: 3,
-    date: "August 21, 2026",
-    title: "A Complete Guide to Efficient, Customer-Centric Support Workflows",
-    discription:
-      "Learn how to design streamlined processes that prioritize customer needs, reduce response times, and empower your team to deliver...",
-    image: "",
-    link: "",
-  },
-
-  {
-    id: 4,
-    date: "August 21, 2026",
-    title: "Make Support Easy for Your Team—and Amazing for Your Customers",
-    discription:
-      "Simplify support operations with intuitive ticketing tools that help your team work efficiently, while providing fast, personalized assistance...",
-    image: "",
-    link: "",
+      "Yes. FlockDesk is scalable to your team because of automation, permission settings and workflow settings. Reporting on response time, resolution time, number of tickets, SLAs and customer satisfaction is provided by FlockDesk to know where improvements need to be made.",
   },
 ];

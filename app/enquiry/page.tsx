@@ -521,7 +521,7 @@ export default function Enquiry() {
                 </div>
                 <p className="submit-text">
                   By submitting, you agree to our{" "}
-                  <Link href="/">Privacy Policy.</Link>
+                  <Link href="/enquiry">Privacy Policy.</Link>
                 </p>
 
                 <button

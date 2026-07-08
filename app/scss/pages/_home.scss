@@ -649,7 +649,7 @@
 
 .use-case {
     width: 100%;
-    margin-bottom: 50px;
+
 
     .content-area {
         .heading-area {
@@ -886,14 +886,14 @@
 
 
 .core-features {
-    padding-top: 60px;
+    padding-top: clamp(60px, 5vw, 100px);
     position: relative;
     padding-bottom: clamp(40px, 3vw, 60px);
     margin-bottom: clamp(40px, 3vw, 60px);
 
     &::before {
         content: '';
-        top: 0;
+        top: 35px;
         right: 0;
         width: 797.135px;
         height: 711.539px;
@@ -1017,7 +1017,7 @@
 .why-flockdesk {
     background: #1A1E24;
     overflow: hidden;
-    margin-bottom: clamp(40px, 5vw, 100px);
+
 
     .content-area {
         display: flex;
@@ -1300,6 +1300,8 @@
 
 .how-it-works {
     position: relative;
+
+    padding-top: clamp(40px, 5vw, 100px);
 
     &::before {
         content: '';
@@ -2004,7 +2006,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        white-space: pre-wrap;
+        white-space: normal;
         -webkit-line-clamp: 3;
         overflow: hidden;
         -webkit-box-orient: vertical;
@@ -2031,7 +2033,7 @@
                 align-items: center;
                 gap: 7px;
                 margin-bottom: clamp(20px, 2.5vw, 35px);
-                white-space: pre-wrap;
+                white-space: normal;
 
                 img {
                     width: 28px;
@@ -2061,7 +2063,7 @@
             p {
                 margin-bottom: clamp(28px, 2.5vw, 35px);
                 font-size: clamp(15px, 1.2vw, 20px);
-                white-space: pre-wrap;
+                white-space: normal;
             }
 
             img {
@@ -2108,7 +2110,7 @@
 
                     p {
                         font-size: clamp(15px, 1.2vw, 16px);
-                        white-space: pre-wrap;
+                        white-space: normal;
                         -webkit-line-clamp: 3;
                         overflow: hidden;
                         -webkit-box-orient: vertical;

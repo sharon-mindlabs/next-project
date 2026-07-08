@@ -27,7 +27,7 @@ export default function Footer() {
                   <Link href="/privacy-policy">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="/blog">Blog</Link>
+                  <Link href="https://flockdesk.com/blog/">Blog</Link>
                 </li>
               </ul>
             </div>

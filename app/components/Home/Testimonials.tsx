@@ -41,7 +41,7 @@ export default function Testimonials({ data }: TestimonialProps) {
               </p>
             </section>
 
-            <Link className="button btn-white btn-xxl" href="">
+            <Link className="button btn-white btn-xxl" href="/enquiry">
               Start Free Trial
             </Link>
           </div>

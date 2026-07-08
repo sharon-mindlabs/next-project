@@ -68,7 +68,7 @@ export default function Faq({ data }: FaqProps) {
                   </section>
                 </div>
 
-                <Link className="button btn-primary btn-xl" href="/about">
+                <Link className="button btn-primary btn-xl" href="/enquiry">
                   Contact Support
                 </Link>
               </div>

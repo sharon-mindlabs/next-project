@@ -42,23 +42,15 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
-            <Link href="#features-section">Features</Link>
-            <Link href="#how-it-works">How it works</Link>
-            <Link href="/blog">Blog</Link>
+            <Link href="/#features-section">Features</Link>
+            <Link href="/#how-it-works">How it works</Link>
+            <Link href="https://flockdesk.com/blog">Blog</Link>
             {/* Mobile Sign In inside menu */}
 
             <div className="mobile-signin">
               <Link
-                href="/signin"
-                title="Sign In"
-                className="button btn-primary-line btn-sm"
-              >
-                Sign In
-              </Link>
-
-              <Link
                 href="/enquiry"
-                title="Sign In"
+                title="Start Free Trial"
                 className="button btn-primary btn-sm"
               >
                 Start Free Trial
@@ -69,16 +61,8 @@ export default function Header() {
           {/* Desktop Sign In */}
           <div className="desktop-signin">
             <Link
-              href="/signin"
-              title="Sign In"
-              className="button btn-primary-line btn-sm"
-            >
-              Sign In
-            </Link>
-
-            <Link
               href="/enquiry"
-              title="Sign In"
+              title="Start Free Trial"
               className="button btn-primary btn-sm"
             >
               Start Free Trial

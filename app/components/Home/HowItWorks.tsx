@@ -75,9 +75,6 @@ export default function HowItWorks({ data }: HowWorksStepProps) {
                   <li>Improve customer satisfaction scores</li>
                   <li>Eliminate email chaos and confusion</li>
                 </ul>
-                <Link className="button btn-primary btn-xxl" href="/about">
-                  Learn from our case study
-                </Link>
               </div>
             </div>
           </div>
