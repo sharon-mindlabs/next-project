@@ -20,7 +20,6 @@ import {
   HowWorksStepsData,
   TestimornalsData,
   FAQData,
-  HomeBlogData,
 } from "../data";
 
 export default async function Home() {
