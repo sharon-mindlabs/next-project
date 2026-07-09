@@ -44,7 +44,7 @@ export default function Header() {
           <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
             <Link href="/#features-section">Features</Link>
             <Link href="/#how-it-works">How it works</Link>
-            <Link href="https://flockdesk.com/blog">Blog</Link>
+            <Link href="https://blog.flockdesk.com/">Blog</Link>
             {/* Mobile Sign In inside menu */}
 
             <div className="mobile-signin">
