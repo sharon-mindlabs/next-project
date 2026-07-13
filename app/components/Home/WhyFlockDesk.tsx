@@ -241,9 +241,9 @@ export default function WhyFlockDesk({ data }: WhyChooseProps) {
               <div className="discription">
                 <img src="images/king-icon.svg" alt="" />
                 <p>
-                  A unified support platform that helps teams resolve tickets
-                  faster, collaborate better, and scale customer support without
-                  operational complexity.
+                  A unified customer support platform that helps teams organize
+                  conversations, manage tickets efficiently, and collaborate
+                  from one secure workspace.
                 </p>
               </div>
             </div>

@@ -27,8 +27,8 @@ export default function CoreFeatures({ data }: CoreFeatureProps) {
             </h3>
             <p>
               Everything your team needs to manage customer support efficiently,
-              from ticket management and automation to analytics, security, and
-              collaboration.
+              from ticket management and automation to secure collaboration and
+              email-based support.
             </p>
 
             <Link className="button btn-primary btn-xxl" href="/enquiry">

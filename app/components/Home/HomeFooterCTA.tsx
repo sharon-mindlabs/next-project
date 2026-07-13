@@ -46,7 +46,8 @@ export default function HomeFooterCTA() {
 
               <span>
                 Join growing teams using FlockDesk to manage support tickets,
-                automate workflows, and improve response times.
+                automate workflows, and keep customer conversations organized
+                from one workspace.
               </span>
             </div>
           </div>
