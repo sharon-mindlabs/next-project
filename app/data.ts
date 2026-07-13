@@ -215,44 +215,44 @@ export const whyChooseData: WhyChooseDataItem[] = [
       },
     ],
 
-    priceIcon: "icon-setting-2",
-    price: "Custom",
-  },
-
-  {
-    id: 2,
-    title: "Traditional Tools",
-
-    features: [
-      {
-        option: "no",
-        point: "Multiple disconnected inboxes",
-      },
-
-      {
-        option: "no",
-        point: "Shared customer conversations",
-      },
-
-      {
-        option: "no",
-        point: "Per-agent pricing",
-      },
-
-      {
-        option: "yes",
-        point: "Manual ticket handling",
-      },
-
-      {
-        option: "yes",
-        point: "Limited collaboration",
-      },
-    ],
-
     priceIcon: "icon-pin",
-    price: "$49/month",
+    price: "$9.99/month",
   },
+
+  // {
+  //   id: 2,
+  //   title: "Traditional Tools",
+
+  //   features: [
+  //     {
+  //       option: "no",
+  //       point: "Multiple disconnected inboxes",
+  //     },
+
+  //     {
+  //       option: "no",
+  //       point: "Shared customer conversations",
+  //     },
+
+  //     {
+  //       option: "no",
+  //       point: "Per-agent pricing",
+  //     },
+
+  //     {
+  //       option: "yes",
+  //       point: "Manual ticket handling",
+  //     },
+
+  //     {
+  //       option: "yes",
+  //       point: "Limited collaboration",
+  //     },
+  //   ],
+
+  //   priceIcon: "icon-pin",
+  //   price: "$49/month",
+  // },
 ];
 
 // Banner user icons

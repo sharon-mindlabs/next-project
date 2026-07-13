@@ -46,7 +46,7 @@ export default function Testimonials({ data }: TestimonialProps) {
             </Link>
           </div>
 
-          <div className="testimonials-slider-wrapper">
+          {/* <div className="testimonials-slider-wrapper">
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={24}
@@ -104,7 +104,7 @@ export default function Testimonials({ data }: TestimonialProps) {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -152,7 +152,6 @@ export default function Testimonials({ data }: TestimonialProps) {
                 satisfaction
               </span>
               <div className="counter-wrapper">
-                &lt;
                 <span className="count">4.9</span>/5
               </div>
             </div>
