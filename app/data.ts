@@ -45,7 +45,7 @@ export const homeTabData = [
     description:
       "Manage customer tickets from a centralized workspace with organized workflows, smart filtering, and collaborative tools designed to keep support efficient and responsive.",
     features: [
-      "Status-based workflows (open, pending, resolved)",
+      "Status-based workflows",
       "Tag filtering & bulk ticket actions",
       "Custom views for every team",
       "Ticket merging & conversation threading",
@@ -186,32 +186,32 @@ export const coreFeaturesData = [
 export const whyChooseData: WhyChooseDataItem[] = [
   {
     id: 1,
-    title: "FlockDesk",
+    title: "Starter",
 
     features: [
       {
         option: "yes",
-        point: "Email-First Ticket Management",
+        point: "Unlimited Support Tickets",
       },
 
       {
         option: "yes",
-        point: "Secure Multi-Tenant Workspaces",
+        point: "Email Ticketing & Customer Portal",
       },
 
       {
         option: "yes",
-        point: "Unlimited Agents",
+        point: "Automation & Saved Responses",
       },
 
       {
         option: "yes",
-        point: "Automated Workflows",
+        point: "Internal Collaboration Tools",
       },
 
       {
         option: "yes",
-        point: "Admin & Agent Permissions",
+        point: "1 Email Inbox • 1 Admin • 1 Agent",
       },
     ],
 
@@ -219,40 +219,40 @@ export const whyChooseData: WhyChooseDataItem[] = [
     price: "$9.99/month",
   },
 
-  // {
-  //   id: 2,
-  //   title: "Traditional Tools",
+  {
+    id: 1,
+    title: "Business",
 
-  //   features: [
-  //     {
-  //       option: "no",
-  //       point: "Multiple disconnected inboxes",
-  //     },
+    features: [
+      {
+        option: "yes",
+        point: "Unlimited Support Tickets",
+      },
 
-  //     {
-  //       option: "no",
-  //       point: "Shared customer conversations",
-  //     },
+      {
+        option: "yes",
+        point: "Email Ticketing & Customer Portal",
+      },
 
-  //     {
-  //       option: "no",
-  //       point: "Per-agent pricing",
-  //     },
+      {
+        option: "yes",
+        point: "Automation & Saved Responses",
+      },
 
-  //     {
-  //       option: "yes",
-  //       point: "Manual ticket handling",
-  //     },
+      {
+        option: "yes",
+        point: "Internal Collaboration Tools",
+      },
 
-  //     {
-  //       option: "yes",
-  //       point: "Limited collaboration",
-  //     },
-  //   ],
+      {
+        option: "yes",
+        point: "Unlimited Email Inboxes, Admins & Agents",
+      },
+    ],
 
-  //   priceIcon: "icon-pin",
-  //   price: "$49/month",
-  // },
+    priceIcon: "icon-setting-2",
+    price: "Custom",
+  },
 ];
 
 // Banner user icons

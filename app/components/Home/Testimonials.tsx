@@ -118,7 +118,7 @@ export default function Testimonials({ data }: TestimonialProps) {
                 FlockDesk
               </span>
               <div className="counter-wrapper">
-                <span className="count">5000</span>+
+                <span className="count">500</span>+
               </div>
             </div>
 
