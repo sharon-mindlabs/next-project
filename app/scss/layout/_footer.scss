@@ -18,8 +18,15 @@
 
         .logo-section {
             display: flex;
-            align-items: center;
+            align-items: self-end;
             gap: clamp(24px, 2.5vw, 40px);
+
+            .logo {
+                img {
+
+                    height: auto;
+                }
+            }
 
             @media (max-width: 1200px) {
                 flex-direction: column;
@@ -31,9 +38,12 @@
                     display: flex;
                     align-items: center;
                     gap: clamp(20px, 2vw, 30px);
+                    line-height: normal;
 
 
                     li {
+                        line-height: normal;
+
                         a {
                             color: #595959;
                             font-size: clamp(14px, 1.2vw, 16px);

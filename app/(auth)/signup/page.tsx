@@ -20,7 +20,7 @@ export default function SignupPage() {
           <div className="header-section">
             <div className="heading">
               <Image
-                src="/logo.svg" // path from /public
+                src="/logo-1.svg" // path from /public
                 alt="Hero Image"
                 width={400}
                 height={300}

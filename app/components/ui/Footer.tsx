@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="logo">
               <Link href="/">
                 <Image
-                  src="/logo.svg" // path inside public/
+                  src="/logo-1.svg" // path inside public/
                   alt="My Logo"
                   width={153}
                   height={40}
