@@ -7,9 +7,8 @@ export default function HomeBanner() {
         <div className="content--area">
           <div className="text-area">
             <div className="heading">
-              <div className="discription">
-                <img src="images/banner-discription-icon.svg" alt="" />
-                <span>Flockdesk</span>
+              <div className="logo">
+                <img src="/logo-1.svg" alt="" />
               </div>
               <h1>
                 Coming <span>Soon</span>

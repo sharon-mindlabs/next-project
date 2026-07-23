@@ -341,6 +341,15 @@
     }
 
     &.coming-soon {
+        .logo {
+            margin: 0 auto;
+
+            img {
+                height: auto;
+                width: 180px;
+                margin-bottom: 15px;
+            }
+        }
 
         &::before {
             content: '';
