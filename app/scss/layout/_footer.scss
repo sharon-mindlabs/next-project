@@ -18,12 +18,11 @@
 
         .logo-section {
             display: flex;
-            align-items: self-end;
+            align-items: center;
             gap: clamp(24px, 2.5vw, 40px);
 
             .logo {
                 img {
-
                     height: auto;
                 }
             }

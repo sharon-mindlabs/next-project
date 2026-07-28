@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="/font/icomoon/style.css" />
         <title>Flockdesk</title>
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon-1.svg" />
         <link
           href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Marcellus&display=swap"
           rel="stylesheet"

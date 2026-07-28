@@ -28,7 +28,7 @@ export default function HomeFooterCTA() {
           </div>
 
           <div className="image-area">
-            <img className="logo" src="images/cta-log-1.svg" alt="" />
+            <img className="logo" src="images/cta-log-2.svg" alt="" />
 
             <div
               className="bg-image"

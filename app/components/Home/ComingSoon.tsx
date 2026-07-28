@@ -8,7 +8,7 @@ export default function HomeBanner() {
           <div className="text-area">
             <div className="heading">
               <div className="logo">
-                <img src="/logo-1.svg" alt="" />
+                <img src="/logo-2.svg" alt="" />
               </div>
               <h1>
                 Coming <span>Soon</span>
