@@ -77,13 +77,9 @@ export default function RootLayout({
     operatingSystem: "Web",
     url: "https://flockdesk.com",
     image: "https://flockdesk.com/logo-2.svg",
-    logo: "https://flockdesk.com/logo-2.svg",
+
     description:
       "Manage customer support from one workspace with FlockDesk. Automate workflows, track SLAs, and help your team resolve issues faster.",
-    brand: {
-      "@type": "Brand",
-      name: "FlockDesk",
-    },
     publisher: {
       "@type": "Organization",
       name: "FlockDesk",
