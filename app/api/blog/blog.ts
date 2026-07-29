@@ -10,7 +10,7 @@ export type HomeBlogItems = {
 export async function getLatestBlogs(): Promise<HomeBlogItems[]> {
   try {
     const res = await fetch(
-      "https://flockdesk.com/blog/wp-json/recent/v1/latest-posts",
+      "https://blog.flockdesk.com/wp-json/recent/v1/latest-posts",
       {
         next: {
           revalidate: 3600, // Cache for 1 hour
