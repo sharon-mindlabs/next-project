@@ -11,6 +11,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://flockdesk.com"),
+  alternates: {
+    canonical: "https://flockdesk.com",
+  },
   title: {
     default: "FlockDesk - Help Desk, Ticketing & Customer Support Software",
     template: "%s | FlockDesk",
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "FlockDesk - Help Desk, Ticketing & Customer Support Software",
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
     title: "FlockDesk - Help Desk, Ticketing & Customer Support Software",
     description:
       "Manage customer support from one workspace with FlockDesk. Automate workflows, track SLAs, and help your team resolve issues faster. Start free.",
-    images: ["/images/og-image.png"],
+    images: ["/logo-2.svg"],
   },
   icons: {
     icon: "/favicon-1.svg",
@@ -73,8 +76,8 @@ export default function RootLayout({
     applicationSubCategory: "Help Desk & Customer Support Software",
     operatingSystem: "Web",
     url: "https://flockdesk.com",
-    image: "https://flockdesk.com/images/og-image.png",
-    logo: "https://flockdesk.com/images/logo.png",
+    image: "https://flockdesk.com/logo-2.svg",
+    logo: "https://flockdesk.com/logo-2.svg",
     description:
       "Manage customer support from one workspace with FlockDesk. Automate workflows, track SLAs, and help your team resolve issues faster.",
     brand: {
@@ -102,7 +105,7 @@ export default function RootLayout({
 
   const faqSchema = {
     "@context": "https://schema.org",
-    "@type": "FAQ",
+    "@type": "FAQPage",
     mainEntity: FAQData.map((faq) => ({
       "@type": "Question",
       name: faq.qustion,
