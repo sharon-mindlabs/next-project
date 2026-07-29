@@ -37,7 +37,11 @@ export default function Footer() {
           <div className="conncet-with">
             <div className="powered-by">
               <span>Powered by</span>
-              <Link href="https://www.mindbees.com/">
+              <Link
+                href="https://www.mindbees.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <img src="images/mindbees-logo.png" alt="" />
               </Link>

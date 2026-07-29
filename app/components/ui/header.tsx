@@ -72,7 +72,7 @@ export default function Header() {
             {/* Navigation */}
             <nav className={`menu-navigation ${menuOpen ? "show" : ""}`}>
               <Link href="/#features-section">Features</Link>
-              <Link href="/#how-it-works">How it works</Link>
+              <Link href="/#how-it-works">How it Works</Link>
               <Link href="https://blog.flockdesk.com/">Blog</Link>
               {/* Mobile Sign In inside menu */}
 
@@ -150,15 +150,15 @@ export default function Header() {
               aria-label="Close video"
               style={{
                 position: "absolute",
-                right: 8,
-                top: 8,
+                right: 4,
+                top: 4,
                 zIndex: 2,
                 background: "rgba(255,255,255,0.1)",
                 border: "none",
-                color: "#fff",
+                color: "#000",
                 fontSize: 20,
-                width: 36,
-                height: 36,
+                width: 42,
+                height: 42,
                 borderRadius: 18,
                 cursor: "pointer",
               }}
