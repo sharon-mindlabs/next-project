@@ -3,6 +3,11 @@ import { submitEnquiry } from "@/services/enquiry";
 import Link from "next/link";
 import Select from "react-select";
 import { useState } from "react";
+declare global {
+  interface Window {
+    dataLayer: Record<string, unknown>[];
+  }
+}
 
 export const countryOptions = [
   { value: "Afghanistan", label: "Afghanistan" },
@@ -330,7 +335,13 @@ export default function Enquiry() {
 
       const response = await submitEnquiry(formData);
 
-      console.log(response);
+      // Push GTM event only after successful API submission
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "generate_lead",
+      });
+
+      alert("Enquiry submitted successfully");
 
       alert("Enquiry submitted successfully");
 
